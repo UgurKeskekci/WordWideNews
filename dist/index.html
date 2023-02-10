@@ -10,6 +10,7 @@
 <body >
 <!--NAV BAR-->
    
+
 <nav class="bg-white border-gray-200 px-2 sm:px-4 py-2.5 rounded dark:bg-gray-900">
     <div class="container flex flex-wrap items-center justify-between mx-auto">
       <a href="" class="flex items-center">
@@ -23,8 +24,8 @@
       <div class="hidden w-full md:block md:w-auto" id="navbar-default">
         <ul class="flex flex-col p-4 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
           <li>
-            <button id="homePage" class="block py-2 pl-3 pr-4 text-white  rounded md:bg-transparent md:text-blue-500 md:p-0 dark:text-white bg-blue-500 shadow-lg shadow-blue-500/50" aria-current="page">Detaylar</button>
-            <a id="mainPage"  class="block py-2 pl-3 pr-4 text-white  rounded md:bg-transparent md:text-blue-500 md:p-0 dark:text-white bg-blue-500 shadow-lg shadow-blue-500/50" aria-current="page">Home</a>
+            <button  id="homePage"  class="block py-2 pl-3 pr-4 text-white  rounded md:bg-transparent md:text-blue-500 md:p-0 dark:text-white bg-blue-500 shadow-lg shadow-blue-500/50" aria-current="page">Home</button>
+    
           </li>
           <li>
             <a href="#" class="block py-2 pl-3 pr-4 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent" id="sport">Sport</a>
@@ -43,60 +44,73 @@
     </div>
   </nav>
   
+<!--- BODY NEW 
+
+<section class="rounded dark:bg-gray-900 text-cyan-100">
+   <div class="grid grid-cols-3 gap-0 pt-10 pl-32 pr-32 pb-10  border-black border-2 font-semibold  text-gray-100">
+        <div  id="newsDetailsBusiness">
+          <h4 class="text-center text-2xl underline">Business</h4>
+        </div>
+        <div id="newsdetailsTurkey">
+            <h4 class="text-center text-2xl underline">Technology</h4>
+        </div>
+        <div  id="newsdetailsTechnology">
+            <h4 class="text-center text-2xl underline">Turkey</h4>
+        </div>
+        <div id="newsDetailsSport">
+            0
+        </div>
+        <div id="newsDetailsEntertainment">
+            05
+        </div>
+    </div>
+
+</section>
+
+-->
 
   
-<!--BODYY-->
+<!-- BODYY -->
+
+
     <section class="rounded dark:bg-gray-900">
-     <div class="grid grid-rows-4 grid-flow-col gap-0 pt-10 pl-32 pr-32 pb-10  border-black border-2 font-serif  text-gray-100 ">
-            <div class="row-span-1 ... rounded-tl-lg border border-gray-900 color bg-blue-800 shadow-xl shadow-blue-500/50 hover:bg-blue-600">
-                <div id="newsType" class="pt-2 pr-2 pl-3 pb-1 font-bold text-red-600">Business</div>
-               <div class="pt-0.5 pr-2 pl-5 pb-0  font-medium " id="newsDetailsBusiness"></div>
-                   
+     <div class="grid grid-rows-4 grid-flow-col gap-0 pt-10 pl-12 pr-12 pb-10  border-black border-2 font-semibold   text-gray-100 ">
+           
+            <div class="row-span-1 rounded-tl-lg border border-gray-900 color bg-gray-700 shadow-xl shadow-gray-600 hover:bg-slate-600 justify-items-center" >
+               <div id="newsType" class="pt-2 pr-2 pl-3 pb-1 font-bold text-red-600 text-center text-2xl underline">Business</div>
+               <div class="font-medium" id="newsDetailsBusiness"></div>
+            </div>
+            <div class="row-span-1 ... border border-gray-900 bg-blue-800 shadow-xl shadow-gray-600 invisible ">
+            <div class="pt-0.5 pr-2 pl-5 pb-0  font-medium"></div>
+            </div>
+
+            <div class="row-span-1 ... border border-gray-900 bg-blue-800 shadow-xl shadow-gray-600 invisible">
+                <div class="pt-0.5 pr-2 pl-5 pb-0  font-medium"></div>
+            </div>
+           
+
+
+            <div class="row-span-2 col-span-2 ... border border-gray-900 bg-gray-700 shadow-xl shadow-gray-600 hover:bg-slate-600">
+                <div id="newsType" class="pt-2 pr-2 pl-3 pb-1 font-bold text-green-500 text-center text-2xl underline">Turkey</div>
+                <div  class="font-medium" id="newsdetailsTurkey" ></div>
+            </div>
+           
+
+
+            <div class="row-span-4  ... rounded-tr-lg rounded-br-lg border border-gray-800 bg-gray-700 shadow-xl shadow-gray-600 hover:bg-slate-600">
+                <div class="pt-2 pr-2 pl-3 pb-1 font-bold text-orange-500 text-center text-2xl underline">Technology</div>
+                <div class=" font-medium " id="newsdetailsTechnology" ></div>
+             
+                <div class="pt-2 pr-2 pl-3 pb-1 font-bold text-yellow-500 text-center text-2xl underline" id="newsType"> Sport</div>
+                <div class="  font-medium" id="newsDetailsSport"></div>
               
-            </div>
-            <div class="row-span-1 ... border border-gray-900 bg-blue-800 shadow-xl shadow-blue-500/50">
-                <div class="pt-0.5 pr-2 pl-5 pb-0  font-medium">Author</div>
-                <div class="pt-0.5 pr-2 pl-7 pb-0  font-medium ">Title</div>
-                <div class="pt-0.5 pr-2 pl-8 pb-1 font-light">Description</div>
-            </div>
-            <div class="row-span-1 ... border border-gray-900 bg-blue-800 shadow-xl shadow-blue-500/50">
-                <div class="pt-0.5 pr-2 pl-5 pb-0  font-medium">Author</div>
-                <div class="pt-0.5 pr-2 pl-7 pb-0  font-medium ">Title</div>
-                <div class="pt-0.5 pr-2 pl-8 pb-1 font-light">Description</div>
-            </div>
-            <div class="row-span-1 ... rounded-bl-lg border border-gray-900 bg-blue-800 shadow-xl shadow-blue-500/50">
-                <div class="pt-0.5 pr-2 pl-5 pb-0  font-medium">Author</div>
-                <div class="pt-0.5 pr-2 pl-7 pb-0  font-medium ">Title</div>
-                <div class="pt-0.5 pr-2 pl-8 pb-1 font-light">Description</div>
-            </div>
-            <div class="row-span-2 col-span-2 ... border border-gray-900 bg-blue-800 shadow-xl shadow-blue-500/50">
-                <div id="newsType" class="pt-2 pr-2 pl-3 pb-1 font-bold text-green-500">Turkey</div>
-                <div  class="pt-0.5 pr-2 pl-5 pb-0  font-medium" >Author</div>
-                <div class="pt-0.5 pr-2 pl-7 pb-0  font-medium ">Title</div>
-                <div class="pt-0.5 pr-2 pl-8 pb-1 font-light">Description</div>
-            </div>
-            <div class="row-span-2 col-span-2 ... border border-gray-900 bg-blue-800 shadow-xl shadow-blue-500/50">
-                <div class="pt-0.5 pr-2 pl-5 pb-0  font-medium">Author</div>
-                <div class="pt-0.5 pr-2 pl-7 pb-0  font-medium ">Title</div>
-                <div class="pt-0.5 pr-2 pl-8 pb-1 font-light">Description</div>
-            </div>
-            <div class="row-span-4  ... rounded-tr-lg rounded-br-lg border border-gray-800 bg-blue-800 shadow-xl shadow-blue-500/50">
-                <div class="pt-2 pr-2 pl-3 pb-1 font-bold text-orange-500">Technology</div>
-                <div class="pt-0.5 pr-2 pl-5 pb-0  font-medium " >Author</div>
-                <div class="pt-0.5 pr-2 pl-7 pb-0  font-medium ">Title</div>
-                <div class="pt-0.5 pr-2 pl-8 pb-1 font-light">Description</div>
-                <div class="pt-2 pr-2 pl-3 pb-1 font-bold text-yellow-500" id="newsType"> Sport</div>
-                <div class="pt-0.5 pr-2 pl-5 pb-0  font-medium" id="newsDetailsSport"></div>
-                <div class="pt-0.5 pr-2 pl-7 pb-0  font-medium ">Title</div>
-                <div class="pt-0.5 pr-2 pl-8 pb-1 font-light">Description</div>
-                <div class="pt-2 pr-2 pl-3 pb-1 font-bold text-pink-400">Entertainment</div>
-                <div class="pt-0.5 pr-2 pl-5 pb-0  font-medium">Author</div>
-                <div class="pt-0.5 pr-2 pl-7 pb-0  font-medium ">Title</div>
-                <div class="pt-0.5 pr-2 pl-8 pb-1 font-light">Description</div>
+                <div class="pt-2 pr-2 pl-3 pb-1 font-bold text-pink-400 text-center text-2xl underline">Entertainment</div>
+                <div class="font-medium content-center" id="newsDetailsEntertainment"></div>
               
             </div>
      </div>
     </section>
+
 
 
 
