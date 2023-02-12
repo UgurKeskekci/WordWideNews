@@ -22,7 +22,10 @@ homeBtn.addEventListener("click",function(){
     
 });
 
-
+// 1. habere basınca detaylar geliyor diğerlerinde url hatası veriyor.
+// detay sayfasındaki haberin orjinal kaynağını gösteren link çalışmıyor
+// desing hataları
+//... 
 
 
 async function displayBusinessNews(){
@@ -110,13 +113,13 @@ async function displayTurkeyNews(){
                                 <div class="text-xs font-bold uppercase text-teal-700 mt-1 mb-2">
                                 <h5>${response.articles[i].author}</h5>
                                 </div>
-                                     <div id="card-text">
-                                    <p class="line-clamp-2 mb-3 font-normal text-gray-700 dark:text-gray-400">${response.articles[i].description}</p>
-                               
-                                     <a onclick="window.location.href='news-details.html?title=${encodeURIComponent(response.articles[i].title)}&description=${encodeURIComponent(response.articles[i].description)}&url=${encodeURIComponent(response.articles[i].url)}&img=${encodeURIComponent(response.articles[i].urlToImage)}'" class="inline-flex items-center py-2 px-3 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
-                                     Read more
-                                      </a>
-                                    </div>
+                                <div id="card-text">
+                                <p class="line-clamp-2 mb-3 font-normal text-gray-700 dark:text-gray-400">${response.articles[i].description}</p>
+                           
+                                 <a onclick="window.location.href='news-details.html?title=${encodeURIComponent(response.articles[i].title)}&description=${encodeURIComponent(response.articles[i].description)}&url=${encodeURIComponent(response.articles[i].url)}&img=${encodeURIComponent(response.articles[i].urlToImage)}'" class="inline-flex items-center py-2 px-3 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                                 Read more
+                                  </a>
+                                </div>
                                
                             </div>   
                          </div>
@@ -223,14 +226,12 @@ async function displaySportNews(){
                                 <h5>${response.articles[i].author}</h5>
                                 </div>
                                 <div id="card-text">
-                                    <p class="line-clamp-2 mb-3 font-normal text-gray-700 dark:text-gray-400">${response.articles[i].description}</p>
-                               
-                                     <a onclick="window.location.href='news-details.html?title=${encodeURIComponent(response.articles[i].title)}&description=${encodeURIComponent(response.articles[i].description)}&url=${encodeURIComponent(response.articles[i].url)}&img=${encodeURIComponent(response.articles[i].urlToImage)}'" class="inline-flex items-center py-2 px-3 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
-                                     Read more
-                                      </a>
-                                    </div>
-                               
-                            </div>   
+                                <p class="line-clamp-2 mb-3 font-normal text-gray-700 dark:text-gray-400">${response.articles[i].description}</p>
+                           
+                                 <a onclick="window.location.href='news-details.html?title=${encodeURIComponent(response.articles[i].title)}&description=${encodeURIComponent(response.articles[i].description)}&url=${encodeURIComponent(response.articles[i].url)}&img=${encodeURIComponent(response.articles[i].urlToImage)}'" class="inline-flex items-center py-2 px-3 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                                 Read more
+                                  </a>
+                                </div>
                          </div>
                     </div>    
                 
@@ -277,12 +278,12 @@ async function displayEntertainmentNews(){
                                 <h5>${response.articles[i].author}</h5>
                                 </div>
                                 <div id="card-text">
-                                    <p class="line-clamp-2 mb-3 font-normal text-gray-700 dark:text-gray-400">${response.articles[i].description}</p>
-                               
-                                     <a onclick="window.location.href='news-details.html?title=${encodeURIComponent(response.articles[i].title)}&description=${encodeURIComponent(response.articles[i].description)}&url=${encodeURIComponent(response.articles[i].url)}&img=${encodeURIComponent(response.articles[i].urlToImage)}'" class="inline-flex items-center py-2 px-3 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
-                                     Read more
-                                      </a>
-                                    </div>
+                                <p class="line-clamp-2 mb-3 font-normal text-gray-700 dark:text-gray-400">${response.articles[i].description}</p>
+                           
+                                 <a onclick="window.location.href='news-details.html?title=${encodeURIComponent(response.articles[i].title)}&description=${encodeURIComponent(response.articles[i].description)}&url=${encodeURIComponent(response.articles[i].url)}&img=${encodeURIComponent(response.articles[i].urlToImage)}'" class="inline-flex items-center py-2 px-3 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                                 Read more
+                                  </a>
+                                </div>
                                
                             </div>   
                          </div>

@@ -14,10 +14,12 @@
         const description = decodeURIComponent(urlParams.get('description'));
         const url = decodeURIComponent(urlParams.get('url'));
         const img = decodeURIComponent(urlParams.get('img'));
+        const author = decodeURIComponent(urlParams.get('authot'));
         document.querySelector('h1').innerText = title;
         document.querySelector('p').innerText = description;
         document.querySelector('a').href = url;
         document.querySelector('img').src = img;
+        document.querySelector('h5').innerText = author;
       }
     </script>
 
@@ -59,17 +61,21 @@
   
   <!-- DETAILS BODY -->
 
-
-  
-  <div class="dark:bg-gray-900 flex flex-col px-52">
-    <div class="pt-6">
+  <section class=" dark:bg-gray-900 text-cyan-100 justify-center">
+    
+  <div class="grid justify-items-center xl:gap-x-8">
+    <div  class=" max-w-xl bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700">
+    <div class="rounded-t-lg px-5 py-2">
       <img>
     </div>
-    <div class="pt-6">
-      <h1 class="underline md:text-teal-700 text-2xl font-bold "></h1>
+    <div class="p-5">
+      <h1 class="underline mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white""></h1>
     </div>
-    <div class="mb-3 font-normal text-gray-700 dark:text-gray-400" >
-      <p></p>
+    <div id="author" class="text-xs font-bold uppercase text-teal-700 mt-1 mb-2">
+      <h5>ali veli</h5>
+    </div>
+    <div  >
+      <p class="line-clamp-2 mb-3 font-normal text-gray-700 dark:text-gray-400"></p>
     </div>
     
  
@@ -77,9 +83,9 @@
       <a target="_blank">Read More on the Original Source</a>
     </div>
   </div>
-  
+</div> 
  
-  
+</section>
   
 
 
