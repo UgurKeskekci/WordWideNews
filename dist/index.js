@@ -1,11 +1,11 @@
 
 
 const apiKey= "97ac60f3bcf9482380eaea05ed713d3f"
-const BUSINESS_URL = "https://newsapi.org/v2/top-headlines?country=tr&category=business&?page=1&pageSize=2&apiKey=97ac60f3bcf9482380eaea05ed713d3f"
-const GENERAL_URL= "https://newsapi.org/v2/top-headlines?country=tr&category=general&?page=1&pageSize=2&apiKey=97ac60f3bcf9482380eaea05ed713d3f"
-const TECHNOLOGY_URL= "https://newsapi.org/v2/top-headlines?country=tr&category=technology&?page=1&pageSize=1&apiKey=97ac60f3bcf9482380eaea05ed713d3f"
-const SPORT_URL = "https://newsapi.org/v2/top-headlines?country=tr&category=sport&?page=1&pageSize=1&apiKey=97ac60f3bcf9482380eaea05ed713d3f"
-const ENTERTAINMENT_URL = "https://newsapi.org/v2/top-headlines?country=tr&category=entertainment&?page=1&pageSize=1&apiKey=97ac60f3bcf9482380eaea05ed713d3f"
+const BUSINESS_URL = "https://newsapi.org/v2/top-headlines?country=tr&category=business&?page=1&pageSize=6&apiKey=97ac60f3bcf9482380eaea05ed713d3f"
+const GENERAL_URL= "https://newsapi.org/v2/top-headlines?country=tr&category=general&?page=1&pageSize=6&apiKey=97ac60f3bcf9482380eaea05ed713d3f"
+const TECHNOLOGY_URL= "https://newsapi.org/v2/top-headlines?country=tr&category=technology&?page=1&pageSize=2&apiKey=97ac60f3bcf9482380eaea05ed713d3f"
+const SPORT_URL = "https://newsapi.org/v2/top-headlines?country=tr&category=sport&?page=1&pageSize=2&apiKey=97ac60f3bcf9482380eaea05ed713d3f"
+const ENTERTAINMENT_URL = "https://newsapi.org/v2/top-headlines?country=tr&category=entertainment&?page=1&pageSize=2&apiKey=97ac60f3bcf9482380eaea05ed713d3f"
 
 const homeBtn = document.getElementById("homePage");
 
@@ -55,7 +55,7 @@ async function displayBusinessNews(){
                                 <h5>${response.articles[i].author}</h5>
                                 </div>
                                     <div id="card-text">
-                                    <p class="line-clamp-2 mb-3 font-normal text-gray-700 dark:text-gray-400">${response.articles[i].description}</p>
+                                    <p class="line-clamp-1 mb-3 font-normal text-gray-700 dark:text-gray-400">${response.articles[i].description}</p>
                                
                                      <a onclick="window.location.href='news-details.html?title=${encodeURIComponent(response.articles[i].title)}&description=${encodeURIComponent(response.articles[i].description)}&url=${encodeURIComponent(response.articles[i].url)}&img=${encodeURIComponent(response.articles[i].urlToImage)}'" class="inline-flex items-center py-2 px-3 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
                                      Read more
@@ -113,7 +113,7 @@ async function displayTurkeyNews(){
                                 <h5>${response.articles[i].author}</h5>
                                 </div>
                                 <div id="card-text">
-                                    <p class="line-clamp-2 mb-3 font-normal text-gray-700 dark:text-gray-400">${response.articles[i].description}</p>
+                                    <p class="line-clamp-1 mb-3 font-normal text-gray-700 dark:text-gray-400">${response.articles[i].description}</p>
                                
                                      <a onclick="window.location.href='news-details.html?title=${encodeURIComponent(response.articles[i].title)}&description=${encodeURIComponent(response.articles[i].description)}&url=${encodeURIComponent(response.articles[i].url)}&img=${encodeURIComponent(response.articles[i].urlToImage)}'" class="inline-flex items-center py-2 px-3 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
                                      Read more
@@ -169,7 +169,7 @@ async function displayTechnologyNews(){
                                 <h5>${response.articles[i].author}</h5>
                                 </div>
                                 <div id="card-text">
-                                    <p class="line-clamp-2 mb-3 font-normal text-gray-700 dark:text-gray-400">${response.articles[i].description}</p>
+                                    <p class="line-clamp-1 mb-3 font-normal text-gray-700 dark:text-gray-400">${response.articles[i].description}</p>
                                
                                      <a onclick="window.location.href='news-details.html?title=${encodeURIComponent(response.articles[i].title)}&description=${encodeURIComponent(response.articles[i].description)}&url=${encodeURIComponent(response.articles[i].url)}&img=${encodeURIComponent(response.articles[i].urlToImage)}'" class="inline-flex items-center py-2 px-3 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
                                      Read more
@@ -225,7 +225,7 @@ async function displaySportNews(){
                                 <h5>${response.articles[i].author}</h5>
                                 </div>
                                 <div id="card-text">
-                                    <p class="line-clamp-2 mb-3 font-normal text-gray-700 dark:text-gray-400">${response.articles[i].description}</p>
+                                    <p class="line-clamp-1 mb-3 font-normal text-gray-700 dark:text-gray-400">${response.articles[i].description}</p>
                                
                                      <a onclick="window.location.href='news-details.html?title=${encodeURIComponent(response.articles[i].title)}&description=${encodeURIComponent(response.articles[i].description)}&url=${encodeURIComponent(response.articles[i].url)}&img=${encodeURIComponent(response.articles[i].urlToImage)}'" class="inline-flex items-center py-2 px-3 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
                                      Read more
@@ -277,7 +277,7 @@ async function displayEntertainmentNews(){
                                 <h5>${response.articles[i].author}</h5>
                                 </div>
                                 <div id="card-text">
-                                <p class="line-clamp-2 mb-3 font-normal text-gray-700 dark:text-gray-400">${response.articles[i].description}</p>
+                                <p class="line-clamp-1 mb-3 font-normal text-gray-700 dark:text-gray-400">${response.articles[i].description}</p>
                            
                                  <a onclick="window.location.href='news-details.html?title=${encodeURIComponent(response.articles[i].title)}&description=${encodeURIComponent(response.articles[i].description)}&url=${encodeURIComponent(response.articles[i].url)}&img=${encodeURIComponent(response.articles[i].urlToImage)}'" class="inline-flex items-center py-2 px-3 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
                                  Read more
